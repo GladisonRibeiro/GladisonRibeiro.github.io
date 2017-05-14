@@ -1,17 +1,21 @@
-<div class="jumbotron text-center">
-    <h1></h1>
-    
-    <h2>Nósquipe</h2>
+<div class="text-center fundo">
+    <div class="menu-container">
+        <div class="page-content row"> <img src="../img/home_logo.png" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+            <h1 class="titulo">Nósquipe</h1>
+            <div class="container">
+                <div class="row">
+                    <table class="table">
 
-    <table class="table table-hover table-bordered">
-        
-        <tbody>
+                        <tbody>
 
-            <tr ng-repeat="menbro in equipe">
-                <td>{{ menbro.nome }}</td>
-            </tr>
+                            <tr>
+                                <td style="font-size:3em;font-weight:bold;" ng-repeat="menbro in equipe">{{ menbro.nome }}</td>
+                            </tr>
 
-        </tbody>
-    </table>
-    
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
