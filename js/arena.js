@@ -194,7 +194,7 @@
 
         ////////////////
         function getListaPoliticos() {
-            return [
+            return [                
                 {
                     "nome": "Aecio Neves",
                     "url-img": "img/AecioNeves.jpg",
@@ -206,6 +206,18 @@
                     "participacao": 0,
                     "processo": 5,
                     "votos": 7565377
+                },
+                {
+                    "nome": "Jair Bolsonaro",
+                    "url-img": "img/JairBolsonaro.jpg",
+                    "url-img-partido": "img/PSC.jpg",
+                    "partido": "PSC",
+                    "cargo": "Deputado Federal",
+                    "presenca": 93.10,
+                    "privilegio": 692273.20,
+                    "participacao": 5,
+                    "processo": 0,
+                    "votos": 120646
                 },
                 {
                     "nome": "Magno Malta",
@@ -294,7 +306,7 @@
                     "url-img-partido": "img/PR.jpg",
                     "cargo": "Deputado Federal",
                     "presenca": 73.78,
-                    "privilegio": 12,
+                    "privilegio": 724905.95,
                     "participacao": 0,
                     "processo": 0,
                     "votos": 0
@@ -463,18 +475,6 @@
                     "participacao": 0,
                     "processo": 5,
                     "votos": 67567
-                },
-                {
-                    "nome": "Jair Bolsonaro",
-                    "url-img": "img/JairBolsonaro.jpg",
-                    "url-img-partido": "img/PSC.jpg",
-                    "partido": "PSC",
-                    "cargo": "Deputado Federal",
-                    "presenca": 93.10,
-                    "privilegio": 692273.20,
-                    "participacao": 5,
-                    "processo": 0,
-                    "votos": 120646
                 },
                 {
                     "nome": "Jean Wyllys",
