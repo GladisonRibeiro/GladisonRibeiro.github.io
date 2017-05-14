@@ -1,0 +1,161 @@
+body {
+/*    overflow: hidden;*/
+}
+
+
+@media screen and (max-width: 2000px) {
+    #arena {
+        zoom: 75%;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+    #arena {
+        zoom: 50%;
+    }
+}
+
+#arena {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../img/background-arena.jpg");
+    background-repeat: repeat-y, repeat -x;
+}
+
+.battlefield-box {
+    padding-top: 11%; 
+    text-align: center;
+}
+
+#battlefield {
+    padding-top: 5em;
+    display: inline;
+    margin: 0px auto;
+}
+
+#battlefield .bat-vs {
+ display: inline-block;
+}
+
+#battlefield .bat-frame {
+    display: table-caption;
+}
+
+.bat-frame {
+    position: relative;
+    top: 0px;
+    height: 36.5em;
+    width: 25.5em;
+    border: 1em dotted #fff;
+}
+
+.bat-frame .card{
+    top: -0.8em;
+    left: -0.7em;
+}
+
+.bat-vs {
+    position: relative;
+    top: -2.5em;
+    font-size: 6em;
+    color: #fff;
+    
+    line-height: 5em;
+    margin: 1em;
+}
+
+.card-turned {
+    position: absolute;
+    
+    width: 22em;
+    height: 28em;
+    
+    background-image: url("../img/card-back.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: gray;
+}
+
+.deck .card-turned {
+    width: 22.5em;
+    height: 28.8em;
+    
+    bottom: 6em;
+    left: 4em;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.opponent {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    right: 0em;
+    text-align: center;
+}
+
+.opponent .card-turned {
+    display: inline-block;
+    position: relative;
+    top: -18em;
+    margin-left: 5%;
+    
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+#hand {
+    position: absolute;
+    bottom: -12.8em;
+    left: 10em;
+    right: 0em;
+    text-align: center;
+}
+
+#hand .card{
+    margin-right: 3%;
+    bottom: 0em;
+    transition: all 0.5s ease 0s;
+}
+
+#hand .card:last-child{
+    margin-right: 0;
+}
+
+#hand .card:hover {
+    bottom: 12.8em;
+}
+
+#hand .card .card-attr-box div:hover {
+    background-color: #618CA7;
+    color: #fff;
+    cursor: pointer;
+}
+
+.placar {
+    position: fixed;
+    top: 4em;
+    left: 0px;
+    border: 4px solid #999;
+    border-radius: 15px;
+    width: 24em;
+    height: 17em;
+    padding: 1em;
+    border-radius: 0em;
+    border-left: none;
+    background-color: #666;
+    color: #fff;
+}
+/*@media screen and (max-width: 1366px) {
+    #hand {
+        bottom: -32.3em;
+    }
+    
+    #hand .card:hover {
+        bottom: 32.3em;
+    }
+}*/

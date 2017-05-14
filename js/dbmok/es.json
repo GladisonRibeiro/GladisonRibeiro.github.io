@@ -1,0 +1,123 @@
+[
+	{
+		"nome" : "Carlos Manato",
+		"url-img": "img/CarlosHumbertoMannato.jpg",
+		"url-img-partido" : "img/SDD.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca" : 86.13,
+		"privilegio" : 878558.89,
+		"participacao" : 0,
+		"processo" : 0,
+		"votos" : 67631
+	},
+	{
+		"nome" : "Evair de Melo",
+		"url-img": "img/EvairVieiradeMelo.jpg",
+		"url-img-partido" : "img/PV.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  97.40,
+		"privilegio" :  742672.23,
+		"participacao" :  0,
+		"processo" :  0,
+		"votos" : 63636
+	},
+	{
+		"nome" : "Paulo Foletto",
+		"url-img": "img/PauloRobertoFoletto.jpg",
+		"url-img-partido" : "img/PSB.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  90.71,
+		"privilegio" :  761211.29,
+		"participacao" : 0,
+		"processo" : 1,
+		"votos" : 56565
+	},
+	{
+		"nome" : "Lelo Coimbra",
+		"url-img": "img/WelingtonCoimbra.jpg",
+		"url-img-partido" : "img/PMDB.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca": 84.98,
+		"privilegio" : 898331.94,
+		"participacao" :  0,
+		"processo" : 2,
+		"votos" : 105458
+	},
+	{
+		"nome" : "Dr. Jorge Silva",
+		"url-img": "img/JorgeSilva.jpg",
+		"url-img-partido" : "img/PHS.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  86.99,
+		"privilegio" :  781478.31,
+		"participacao" :  0,
+		"processo" :  0,
+		"votos" : 67262
+	},
+	{
+		"nome" : "Marcus Vicente",
+		"url-img": "img/MarcusAntonioVicente.jpg",
+		"url-img-partido" : "img/PP.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca": 83.81,
+		"privilegio" : 755294.09,
+		"participacao" : 0,
+		"processo" : 2,
+		"votos" : 56565
+	},
+	{
+		"nome" : "NORMA AYUB",
+		"url-img": "img/NormaAyubAlves.jpg",
+		"url-img-partido" : "img/DEM.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  87.54,
+		"privilegio" : 75777.08,
+		"participacao" :  0,
+		"processo" :  0,
+		"votos" : 35655
+	},
+	{
+		"nome" : "Max Filho",
+		"url-img": "img/MaxFreitasMauroFilho.jpg",
+		"url-img-partido" : "img/PSDB.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  89.31,
+		"privilegio" : 638870.51,
+		"participacao" : 0,
+		"processo" : 6,
+		"votos" : 65656
+	},
+	{
+		"nome" : "Sergio Vidigal",
+		"url-img": "img/AntonioSergioAlvesVidigal.jpg",
+		"url-img-partido" : "img/PDT.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  94.58,
+		"privilegio" : 717346.86,
+		"participacao" : 0,
+		"processo" : 9,
+		"votos" : 65434
+	},
+	{
+		"nome" : "Givaldo Vieira",
+		"url-img": "img/GivaldoVieiradaSilva.jpg",
+		"url-img-partido" : "img/PT.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  89.89,
+		"privilegio" :  788238.30,
+		"participacao" :  0,
+		"processo" :  0,
+		"votos" : 56576
+	},
+	{
+		"nome" : "Helder Salomão",
+		"url-img": "img/HelderIgnacioSalomão.jpg",
+		"url-img-partido" : "img/PT.jpg",
+		"cargo" : "Deputado Federal",
+		"presenca":  93.56,
+		"privilegio" :  730116.88,
+		"participacao" :  0,
+		"processo" : 5,
+		"votos" : 67567
+		}
+]

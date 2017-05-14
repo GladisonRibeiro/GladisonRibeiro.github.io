@@ -1,0 +1,20 @@
+.titulo_galeria{
+    font-size: 2em;
+    margin: none !important;
+}
+
+.page-header {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #618CA7;
+    color: #fff;
+    border: none;
+}
+
+.galeria {
+    background-color: #fff;
+    padding-left: 5em;
+    margin-right: 1em;
+    padding-right: 1em;
+    width: 100%;
+}

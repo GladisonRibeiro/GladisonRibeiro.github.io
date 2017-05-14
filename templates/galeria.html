@@ -1,0 +1,787 @@
+ <div class="page-header titulo_galeria text-center">
+        Galeria de cards
+</div>
+<div class="galeria row">
+    <div class="card col-md-3" ng-repeat="politico in politicos" style="margin:15px !important;" data-toggle="modal" data-target="#myModal">
+            <div class="card-bar-box">
+                 <div class="card-info-nome">
+                     {{politico.nome}}
+                 </div>
+                 <div class="card-info-partido">
+                     <img ng-src="{{politico['url-img-partido']}}"/>
+                 </div>
+            </div>
+            <img class="card-info-img" ng-src="{{politico['url-img']}}">
+        
+        <div class="card-attr-box">
+            <div class="card-attr-presenca">
+                <label>Presença</label><span>{{politico.presenca}} %</span>
+            </div>
+            <div class="card-attr-privilegio">
+                <label>Privilégios</label><span>{{politico.privilegio | currency:'R$ '}}</span>
+            </div>
+            <div class="card-attr-processos">
+                <label>Processos</label><span>{{politico.processo}}</span>
+            </div>
+            <div class="card-attr-privilegio">
+                <label>Votos</label><span>{{politico.votos}}</span>
+            </div>
+        </div>
+   </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+        <div class="col-md-12">
+            <div id="grid-ranking">
+                <div class="col col-md-2"> <img src="http://manager.politicos.org.br/files/viewer?file=779741e0-0867-459f-9dd7-49d33464680a.jpg&amp;directory=parliamentarian" class="img-responsive" data-no-photo="/Content/manager/images/no_photo.png"> </div>
+                <div class="col col-md-10" style="">
+                    <h2>Jair Bolsonaro</h2>
+                    <h4>Deputado Federal</h4> 
+                    <h4>PSC</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <p>&nbsp;</p>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-information" href=".panel-information" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-user"></span> &nbsp;&nbsp;Dados do parlamentar
+                        </a>
+                    </h3> </div>
+                <div class="panel-information collapse panel-body">
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div>
+                            <label>Nome:</label> Jair Messias Bolsonaro </div>
+                        <div>
+                            <label>Apelido:</label> Jair Bolsonaro </div>
+                        <div>
+                            <label>E-mail:</label> <a href="mailto:dep.jairbolsonaro@camara.leg.br" data-original-title="" title="">dep.jairbolsonaro@camara.leg.br</a> </div>
+                        <div>
+                            <label>CPF:</label> 453.178.287-91 </div>
+                        <div>
+                            <label>Data de Nascimento:</label> 21/03/1955 </div>
+                        <div>
+                            <label>Partido:</label> Partido Social Cristão </div>
+                        <div>
+                            <label>Número na urna:</label> 1120 </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 col-sm-6">
+                        <div>
+                            <label>Formação Acadêmica:</label> Superior Completo </div>
+                        <div>
+                            <label>Profissão:</label> Militar </div>
+                        <div>
+                            <label>Estado:</label> Rio de Janeiro </div>
+                        <div>
+                            <label>Filiações Partidárias:</label> PDC, PP, PPR, PPB, PTB, PFL, PP </div>
+                        <div>
+                            <label>Orgão:</label> Câmara dos Deputados/BR </div>
+                        <div>
+                            <label>Cargo:</label> Deputado Federal </div>
+                        <div>
+                            <label>Votação:</label> Direta </div>
+                        <div>
+                            <label>Quantidade de Votos:</label> 120.646 </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="full OtherInformations">
+                            <label>Outras Informações:</label> Foi capitão do Exército (1979-1981). Chegou a ser preso por ter liderado manifestação por melhor remuneração – o Superior Tribunal Militar o absolveu dois anos depois. É pai do deputado estadual Flávio Nantes Bolsonaro (PP-RJ) e do vereador Carlos Bolsonaro (PP-RJ). Foi deputado federal nas sete legislaturas anteriores: pelo PDC (1991-1995), pelo PPR (1995-1999), pelo PPB (1999-2003/ 2003-2007) e pelo PP (2007-2011). Também foi vereador do Rio de Janeiro pelo PDC (1989-1991). </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-default" id="score-start">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-point-initial" href=".panel-point-initial" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-signal"></span> &nbsp;&nbsp;Pontuação inicial
+                        </a>
+                    </h3> </div>
+                <div class="panel-point-initial collapse panel-body">
+                    <p class="text-justify"> São dados duzentos pontos iniciais para cada parlamentar. Aqueles que porventura perderem todos os duzentos pontos ou mais, ficam negativos e saem do ranking. Esses serão classificados como "abaixo de zero pontos" e se configurarão como <b>Não Ranqueáveis (NR's)</b>. </p>
+                </div>
+            </div>
+            <div class="panel panel-default" id="presence">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-presents" href=".panel-presents" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-list-alt"></span> &nbsp;&nbsp;Presença nas sessões (Assiduidade)
+                        </a>
+                    </h3> </div>
+                <div class="panel-presents collapse panel-body">
+                    <p class="text-justify"> Compara-se o percentual de faltas do parlamentar com a média de faltas dos demais políticos. A cada dez por cento a mais de faltas que a pessoa tiver, perde-se dez pontos. A cada dez por cento de faltas a menos que o parlamentar tiver, ganha-se dez pontos. <span>
+                                Usa-se a equação a seguir pontos = (((((1,00 + 2 x 25,00)/377,00)/ 0,22 -1) / 0,5) * -10) * 2
+                            </span> </p>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Sessões</th>
+                                    <th>Presenças</th>
+                                    <th>Faltas Justificadas</th>
+                                    <th>Faltas Não Justificadas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Comissão</td>
+                                    <td>158</td>
+                                    <td>141</td>
+                                    <td>0</td>
+                                    <td>17</td>
+                                </tr>
+                                <tr>
+                                    <td>Plenário</td>
+                                    <td>219</td>
+                                    <td>210</td>
+                                    <td>1</td>
+                                    <td>8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="privilege">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-privilege" href=".panel-privilege" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-usd"></span> &nbsp;&nbsp;Privilégios (Cota parlamentar/verba indenizatória)
+                        </a>
+                    </h3> </div>
+                <div class="panel-privilege collapse panel-body">
+                    <p class="text-justify"> Compara o valor gasto pelo político, no período total do mandato, com a média de gastos dos demais parlamentares no mesmo período. A cada dez por cento de gastos acima da média perde-se cinco pontos. A cada dez por cento de gastos abaixo da média dos parlamentares ganha cinco pontos. <span>
+                                Usa-se a equação a seguir pontos = ((((692.273,20/895.830,03) -1) / 0,5) * -10) * 3
+                            </span> </p>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Valor R$</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 85%;"> COMBUSTÍVEIS E LUBRIFICANTES. </td>
+                                    <td>R$ 8.702,08</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> DIVULGAÇÃO DA ATIVIDADE PARLAMENTAR. </td>
+                                    <td>R$ 96.665,21</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> Emissão Bilhete Aéreo </td>
+                                    <td>R$ 222.161,54</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> FORNECIMENTO DE ALIMENTAÇÃO DO PARLAMENTAR </td>
+                                    <td>R$ 3.238,58</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> HOSPEDAGEM ,EXCETO DO PARLAMENTAR NO DISTRITO FEDERAL. </td>
+                                    <td>R$ 1.200,12</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> LOCAÇÃO OU FRETAMENTO DE VEÍCULOS AUTOMOTORES </td>
+                                    <td>R$ 63.933,33</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> MANUTENÇÃO DE ESCRITÓRIO DE APOIO À ATIVIDADE PARLAMENTAR </td>
+                                    <td>R$ 45.720,81</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> PASSAGENS AÉREAS </td>
+                                    <td>R$ 3.790,57</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> SERVIÇO DE TÁXI, PEDÁGIO E ESTACIONAMENTO </td>
+                                    <td>R$ 350,00</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> SERVIÇOS POSTAIS </td>
+                                    <td>R$ 202.123,40</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> TELEFONIA </td>
+                                    <td>R$ 43.027,58</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 85%;"> ASSINATURA DE PUBLICAÇÕES </td>
+                                    <td>R$ 1.359,98</td>
+                                </tr>
+                                <tr>
+                                    <td><b>TOTAL</b></td>
+                                    <td><b>R$ 692.273,20</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="panel panel-default" id="mentirometro">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-public" href=".panel-public" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-bullhorn"></span> &nbsp;&nbsp;Participação Pública (Mentirômetro)
+                        </a>
+                    </h3> </div>
+                <div class="panel-public collapse panel-body">
+                    <p class="text-justify"> Baseia-se nas mentiras e verdades do mandato do parlamentar, de modo que ao ele descumprir suas promessas de campanha, perde pontos e ao cumprir, ganha. E como um espaço público que requer contribuições de visitantes, temos que para colaborarem basta que dirijam-se até o final do perfil do parlamentar e cliquem em “Tirar pontos deste político” ou “Dar pontos a esse político”. Lembrando sempre que os dados prestados devem estar embasados por alguma referência (link)” e que antes de serem atribuídos serão meticulosamente conferidos a fim de serem comprovados. </p>
+                    <div class="msg"> <b>Este parlamentar não possui nenhuma notícia cadastrada.</b> </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="process">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-processeJudicial" href=".panel-processeJudicial" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-eye-open"></span> &nbsp;&nbsp;Processos judiciais
+                        </a>
+                    </h3> </div>
+                <div class="panel-processeJudicial collapse panel-body">
+                    <p class="text-justify"> Avaliamos matematicamente a ficha de processos judiciais do político. Para cada processo o político perde 10 pontos. Cada acusação grave (formação de quadrilha, corrupção, crime violento, etc) perde mais 10 pontos. Processos com condenação pesam em triplo. </p>
+                    <div class="msg"> <b>Este parlamentar não possui processos.</b> </div>
+                </div>
+            </div>
+            <!-- Outros -->
+            <div class="panel panel-default" id="others">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-other" href=".panel-other" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-certificate"></span> &nbsp;&nbsp;Outros (Demais Critérios)
+                        </a>
+                    </h3> </div>
+                <div class="panel-other collapse panel-body">
+                    <!-- <p class="text-justify"></p> -->
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Descrição</th>
+                                    <th>Pontos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Formação (Políticos com formação universitária ganham cinco pontos adicionais)</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Filiações partidárias (Políticos que tenham permanecido sempre no mesmo partido ganham dez pontos. A partir de dois partidos, a cada mudança perde cinco pontos.)</td>
+                                    <td>-10</td>
+                                </tr>
+                            </tbody>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Qualidade Legislativa -->
+            <div class="panel panel-default" id="regulatory-quality">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent=".panel-quality" href=".panel-quality" style="display:block; width:100%; height:100%;" class="" data-original-title="" title="">
+                            <span class="glyphicon glyphicon-thumbs-up"></span> &nbsp;&nbsp;Qualidade Legislativa (Como votou, autor e revisor)
+                        </a>
+                    </h3> </div>
+                <div class="panel-quality collapse panel-body">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#voted" data-original-title="" title="">Como Votou</a></li>
+                        <li><a data-toggle="tab" href="#author" data-original-title="" title="">Autor de Lei</a></li>
+                        <li><a data-toggle="tab" href="#reviser" data-original-title="" title="">Revisor de Lei</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="voted" class="tab-pane fade in active">
+                            <p>&nbsp;</p>
+                            <p class="text-justify"> As leis votadas pelo parlamentar estão agrupadas por tipo de leis. </p>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-17" data-toggle="collapse" data-parent=".panel-quality-17" data-original-title="" title=""> <strong>DCR - Denúncia por crime de responsabilidade)</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-17">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12954" data-original-title="" title="">DCR 1/2015 - Impeachment</a> </td>
+                                                <td>Sim</td>
+                                                <td>25</td>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr id="law-12954" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Denúncia por Crime de Responsabilidade em desfavor da Presidente da República Sra. DILMA VANA ROUSSEFF. Fonte: http://www.camara.gov.br/proposicoesWeb/fichadetramitacao?idProposicao=2057823 1. Os decretos presidenciais: O fato: Ela assinou três decretos de abertura de créditos suplementares: um em 27 de julho de 2015, no valor de 1,7 bilhão de reais, para projetos na área da educação, previdência, trabalho e cultura; outro, na mesma data, no valor de 29 milhões de reais, para diversos órgãos do Executivo; e o terceiro, em 20 de agosto de 2015, no valor de 600 milhões de reais, para despesas com o Judiciário. 2. As pedaladas: O fato: O Governo atrasou entre janeiro e novembro de 2015 o pagamento para o Banco do Brasil de parcelas que totalizaram 3,5 bilhões de reais referentes aos subsídios do Plano Safra. O plano é um programa federal que auxilia agricultores familiares a tomarem empréstimos do banco a juros bem mais baixos, tornando mais fácil o pagamento. O Governo paga ao banco o valor da diferença dos juros. Fonte: http://brasil.elpais.com/brasil/2016/08/28/politica/1472412248_958761.html</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-46" data-toggle="collapse" data-parent=".panel-quality-46" data-original-title="" title=""> <strong>MPV - Medida Provisória)</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-46">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-7385" data-original-title="" title="">MPV 657-2014 - Segurança</a> </td>
+                                                <td>Não</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr id="law-7385" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Esta medida provisória irá alterar a Lei nº 9.266 exigindo que o Diretor-Geral da Polícia Federal seja um delegado da Polícia Federal de Classe Especial*, ou seja, um delegado da Polícia Federal ocupante do nível mais alto da carreira.Na lei atual, não há esta exigência, portanto qualquer pessoa poderia ser escolhida como Diretor Geral da PF. Exemplo: o ex-diretor era delegado da Polícia Civil.Além disso, a Medida Provisória inclui no texto da Lei nº 9.266 que o ocupante do cargo de Diretor-Geral da Polícia Federal deve ser nomeado pelo Presidente da República, como já é determinado, atualmente, pelo Decreto 73.332/73.Contexto: parte dos Policias Federais já consideram um avanço restringir que o ocupante do cargo de Diretor-Geral seja um Delegado de Polícia Federal de classe especial. Outra parte dos Polícias Federais defendem que eles mesmos devem fazer uma eleição interna para escolher seu Diretor-Geral.Texto redigido com a ajuda da Fenadepol&nbsp;(Federação Nacional dos Delegados de Polícia Federal).Alteração: O título e resumo do projeto foram alterados em 03/11/2014.&nbsp;O título e o resumo&nbsp;anteriores do projeto foram definidos com base no texto original da medida provisória (MPV 657/2014). &nbsp;Após receber contatos de alguns usuários sugerindo modificações, convidamos a Fenadepol (Federação Nacional dos Delegados de Polícia Federal) para rever o resumo do projeto destacando as principais implicações da medida provisória. A mesma, nos sugeriu a inclusão do&nbsp;Decreto 73.332/73 no resumo deste, o que motivou a alteração no teor original do título e do resumo. O título anterior do projeto era: "Determinará que o Presidente da República irá nomear o Diretor-Geral da Polícia Federal, que deverá ser um delegado de Polícia Federal."&nbsp; </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12955" data-original-title="" title="">MPV 706/2015 - Concessão (administração pública)</a> </td>
+                                                <td>Não</td>
+                                                <td>2</td>
+                                                <td>-2</td>
+                                            </tr>
+                                            <tr id="law-12955" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Medida Provisória 706/15, que aumenta de 30 para 210 dias o prazo para distribuidoras de energia assinarem aditivo de contrato com o Ministério de Minas e Energia para prorrogar a concessão do serviço. http://www2.camara.leg.br/camaranoticias/noticias/ECONOMIA/509042-CAMARA-APROVA-MP-QUE-PRORROGA-CONTRATOS-DO-SETOR-ELETRICO.html </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12957" data-original-title="" title="">MPV 714/2016 - Adicional de Tarifa Aeroportuária (Ataero)</a> </td>
+                                                <td>Sim</td>
+                                                <td>20</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr id="law-12957" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Medida Provisória 714/16, que aumenta para até 100% a participação do capital estrangeiro com direito a voto nas companhias aéreas nacionais. A abertura total do setor ocorreu com emenda do PMDB, aprovada por 199 votos a 71. http://www2.camara.leg.br/camaranoticias/noticias/TRANSPORTE-E-TRANSITO/511051-CAMARA-APROVA-MP-QUE-PERMITE-100-DE-CAPITAL-ESTRANGEIRO-EM-EMPRESAS-AEREAS.html</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12992" data-original-title="" title="">MPV 746/2016 - Educação</a> </td>
+                                                <td>Sim</td>
+                                                <td>20</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr id="law-12992" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p><span>Promove alterações na estrutura do ensino médio, última etapa da educação básica, por meio da criação da Política de Fomento à Implementação de Escolas de Ensino Médio em Tempo Integral. Amplia a carga horária mínima anual do ensino médio, progressivamente, para 1.400 horas. Determina que o ensino de língua portuguesa e matemática será obrigatório nos três anos do ensino médio. Restringe a obrigatoriedade do ensino da arte e da educação física à educação infantil e ao ensino fundamental, tornando as facultativas no ensino médio. Torna obrigatório o ensino da língua inglesa a partir do sexto ano do ensino fundamental e nos currículos do ensino médio, facultando neste, o oferecimento de outros idiomas, preferencialmente o espanhol. Permite que conteúdos cursados no ensino médio sejam aproveitados no ensino superior. O currículo do ensino médio será composto pela Base Nacional Comum Curricular - BNCC e por itinerários formativos específicos definidos em cada sistema de ensino e com ênfase nas áreas de linguagens, matemática, ciências da natureza, ciências humanas e formação técnica e profissional. Dá autonomia aos sistemas de ensino para definir a organização das áreas de conhecimento, as competências, habilidades e expectativas de aprendizagem definidas na BNCC.</span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-69" data-toggle="collapse" data-parent=".panel-quality-69" data-original-title="" title=""> <strong>PEC - Proposta de Emenda à Constituição)</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-69">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-11775" data-original-title="" title="">PEC 182-2007 Emenda 28 - Eleição</a> </td>
+                                                <td>Sim</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr id="law-11775" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Será permitido aos partidos receber doações em dinheiro de pessoas e empresas.Será permitido aos candidatos receber doação em dinheiro de pessoas.Os limites máximos de arrecadação e gastos para cada cargo eletivo serão definidos em lei. </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-11776" data-original-title="" title="">PEC 182-2007-substitutivo item 1 - Eleição</a> </td>
+                                                <td>Sim</td>
+                                                <td>10</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr id="law-11776" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> De acordo com esta proposta, deputados e vereadores serão eleitos pelo sistema majoritário – os mais votados serão eleitos –, acabando com o atual sistema proporcional, em que a eleição leva em conta a votação do partido ou coligação.&nbsp; </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12099" data-original-title="" title="">PEC 182-2007 - Eleição</a> </td>
+                                                <td>Não</td>
+                                                <td>5</td>
+                                                <td>-5</td>
+                                            </tr>
+                                            <tr id="law-12099" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Esta Proposta de Emenda à Constituição assegurará aos partidos políticos o direito sobre a titularidade dos mandatos políticos.&nbsp;O político que se desfilliar do partido pelo qual foi eleito perderá automaticamente o mandato para cargo no Poder Legislativo ou Poder Executivo, exceto nos casos de extinção, incorporação ou fusão do partido político.A perda do cargo político será declarada pelos seguintes órgãoes:- pelo Tribunal Superior Eleitoral, quando se tratar de Presidente ou Vice-Presidente da República; - pelo Tribunal Regional Eleitoral, quando se tratar de Governador ou Vice-Governador de Estado ou do Distrito Federal; - pelo Juiz Eleitoral, quando se tratar de Prefeito ou Vice-Prefeito. As declarações deverão ser realizadas por meio de comunicação direcionada à direção do partido político do respectivo nível. Esta declaração será acompanhada de documento que comprove a desfiliação do político, de acordo com o estabelecido na Constituição Federal, na Constituição Estadual ou na Lei Orgânica dos Municípios. Será proibida a eleição de suplentes de senadores de partidos diferentes. Isto é, os suplentes do senador deverão ser do mesmo partido político. O deputado e senador federal perderão o mandado político quando se defiliarem do partido político pelo qual tenham sido eleitos, exceto nos casos de fusão, incorporação ou extinção do partido político. Neste caso, a declaração da perda do mandado será realizada pela Mesa da Casa da Câmara dos Deputados ou do Senado Federal, no prazo máximo de 3 sessões ordinárias ou extraordinárias. A declaração será direcionada à direção nacional do partido político, acompanhada de documentação que comprove a desfiliação. Esta Emenda Constitucional entrará em vigor na data de sua publicação, aplicando-se a partir da primeira eleição subsequente. </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12101" data-original-title="" title="">PEC 358-2013 - Administração pública</a> </td>
+                                                <td>Não</td>
+                                                <td>-10</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr id="law-12101" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>A PEC do&nbsp;Orçamento&nbsp;Impositivo&nbsp;teve origem no Senado (PEC 565-2006), onde foi aprovada. Ao ser encaminhada para a Câmara, esta PEC ganhou novo número (PEC 358-2013) e alterou limite das emendas e determinou parte destes recursos para área da Saúde.Pela proposta que está sendo votada pela Câmara, o valor das emendas parlamentares será de no máximo 1,2% da receita corrente líquida da União.Metade dos recursos das emendas individuais deverão ser direcionados à área da saúde.Além disso, esta PEC obrigará uma ampliação progressiva dos recursos aplicados pelo governo federal na Saúde nos 5 anos seguintes ao da promulgação desta PEC, alcançando, ao final, 15% da receita corrente líquida da União.Os parlamentares usam essas emendas para repassar&nbsp;verbas da União para&nbsp;obras nos&nbsp;estados e cidades que eles representam. Entretanto, atualmente o governo pode não aceitar essas emendas, ou seja, o Governo decide se vai liberar ou não estas verbas e para quais parlamentares vai liberar. Com este projeto o Governo será obrigado a repassar uma parte das verbas para cada um dos parlamentares, e estes por sua vez poderão decidir como aplicar o dinheiro nas regiões de&nbsp;suas bases eleitorais. &nbsp;</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-7158" data-original-title="" title="">PEC 443-2009 - Trabalho</a> </td>
+                                                <td>Não</td>
+                                                <td>-5</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr id="law-7158" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Este projeto de lei determinará que os salários das carreiras da Advocacia-Geral da União e de delegados civis e federais serão vinculados a 90,25% do salário dos ministros do Supremo Tribunal Federal (STF).&nbsp; Também estão incluídos procuradores de estado e de municípios com mais de 500 mil habitantes. A implementação desta nova regra vai ocorrer de acordo com o seguinte cronograma, a contar do exercício financeiro de sua publicação:- no âmbito da União, em até dois exercícios financeiros; - no âmbito dos Estados, do Distrito Federal e dos Municípios em até três exercícios financeiros. </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-11815" data-original-title="" title="">PEC 457-2005 - Aposentados</a> </td>
+                                                <td>Não</td>
+                                                <td>10</td>
+                                                <td>-10</td>
+                                            </tr>
+                                            <tr id="law-11815" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Esta proposta de lei, conhecida como PEC da Bengala, aumentará de 70 para 75 anos a idade de aposentadoria obrigatória dos membros de Tribunais Superiores, Tribunal de Conta da União e Supremo Tribunal Federal.Uma Lei, ainda a ser feita, poderá determinar quais outros cargos do serviço público poderão ter a aposentadoria ampliada. &nbsp; </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-7308" data-original-title="" title="">PEC 1/2015 - Economia</a> </td>
+                                                <td>Sim</td>
+                                                <td>10</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr id="law-7308" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Esta proposta vai aumentar o valor que os municípios têm direito de receber referente ao dinheiro arrecadado com a Cide, (Contribuição de Intervenção no Domínio Econômico) incidente sobre importação e comercialização de combustíveis. Esta proposta quer que a União; os estados; e os municípios recebam, cada, um terço do dinheiro arrecadado. Atualmente, 29% da Cide vai para os estados, e desse total 25% são repassados às cidades proporcionalmente ao Fundo de Participação dos Municípios (FPM) e ao tamanho das populações. Ou seja, algumas cidades recebem mais do que outras. O senador autor deste projeto explica que de cada R$ 100 arrecadados com a Cide, a União fica com R$ 71,00 e repassa R$ 21,75 aos estados. Aos municípios são destinados apenas R$ 7,25. </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12937" data-original-title="" title="">PEC 11/2015 - Jurídico - Direito eleitoral e partidos políticos.</a> </td>
+                                                <td>Sim</td>
+                                                <td>5</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr id="law-12937" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> "Foi aprovada em segundo turno, nesta terça-feira, 22, pela Câmara, a Proposta de Emenda à Constituição (PEC 11/2015) que garante mais poder ao Tribunal Superior do Trabalho (TST). A proposta, que impede recursos das decisões do TST ao Supremo Tribunal Federal (STF), inclui a instituição explicitamente entre os órgãos do Poder Judiciário. Na decisão de hoje, foram 384 votos favoráveis, 26 contrários e 7 abstenções. Entre as determinações, a PEC estabelece que cabe ao TST processar e julgar recurso de revista para preservar sua competência e garantir a autoridade de suas decisões. Como justificativa da PEC, está a defesa da igualdade constitucional do TST com o STJ. Como o texto não teve mudanças em relação ao enviado pelo Senado Federal, a matéria será promulgada em breve. A data ainda não foi definida." Fonte: http://exame.abril.com.br/brasil/noticias/camara-prova-pec-que-assegura-mais-poder-ao-tst </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12938" data-original-title="" title="">PEC 395/2014 - Ensino Publico</a> </td>
+                                                <td>Não</td>
+                                                <td>15</td>
+                                                <td>-15</td>
+                                            </tr>
+                                            <tr id="law-12938" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> A Câmara dos Deputados aprovou, na noite desta quarta-feira, 17, emenda que retirou do texto da Proposta de Emenda à Constituição (PEC) 395/2014 a possibilidade de universidades públicas cobrarem por mestrado profissional. A mudança foi aprovada por 455 votos a 10." "Por se tratar de uma mudança na Constituição, a proposta deve ser votada em dois turnos. Da Câmara, ela ainda seguirá para o Senado." Fonte: http://educacao.estadao.com.br/noticias/geral,camara-aprova-emenda-que-proibe-cobranca-de-mestrado-profissional-por-universidades-publicas,10000016954 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12949" data-original-title="" title="">PEC 4/2015 - Desvinculação de Receitas da União (DRU)</a> </td>
+                                                <td>Sim</td>
+                                                <td>30</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr id="law-12949" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>São desvinculados de órgão, fundo ou despesa, até 31 de dezembro de 2023, 30% (trinta por cento) das receitas dos Estados e do Distrito Federal relativas a impostos, taxas e multas, já instituídos ou que vierem a ser criados até a referida data, seus adicionais e respectivos acréscimos legais, e outras receitas correntes. "A Câmara aprovou, na noite de quarta-feira (8), uma medida importante para que o governo possa reorganizar as contas públicas e a economia: a prorrogação da Desvinculação de Receitas da União (DRU) até 2023. A medida autoriza o governo a redefinir as prioridades de cerca de R$ 120 bilhões em receitas. Na prática, a DRU aumenta a flexibilidade para que o governo use parte dos recursos do orçamento com despesas que considerar mais importantes. Essa autorização deixa livre o uso de 30% de receitas que hoje são “engessadas”, destinadas a despesas específicas. A medida ajuda também a formação de superávits primários (economia para pagar os juros da dívida). Essa poupança ainda tem um efeito prático para as famílias que é o controle da inflação. Se as contas públicas estão em ordem e é possível fazer uma economia para pagar os juros da dívida, há menos combustível para os preços ao consumidor, ou seja, o custo de vida fica mais controlado. Seu bolso: As finanças do governo organizadas também têm um segundo efeito, diminuem a necessidade de o Banco Central subir os juros. Esse cenário de estabilidade fiscal pode, inclusive, colaborar para a redução dos juros, o que torna os empréstimos e financiamentos mais baratos e impulsiona os investimentos. A medida ainda precisa ser aprovada pelo Senado, mas depois de passar totalmente pelo Congresso, esses recursos desvinculados serão transferidos para uma fonte do Tesouro Nacional que é de livre movimentação, sem qualquer tipo de obrigação ou destinação. Esses recursos que a proposta de DRU afeta são obtidos com taxas, contribuições sociais e de intervenção sobre o domínio econômico (Cide). Atualmente, eles são destinados, por determinação legal, a órgãos, fundos e despesas específicos." Fonte: http://www.brasil.gov.br/economia-e-emprego/2016/06/entenda-o-que-e-a-dru-e-como-ela-afeta-a-sua-vida http://www.brasil-economia-governo.org.br/2011/12/05/o-que-e-e-para-que-serve-a-desvinculacao-de-receitas-da-uniao-dru/ http://g1.globo.com/politica/noticia/2016/06/camara-aprova-em-2-turno-prorrogacao-da-dru-ate-2023.html</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12966" data-original-title="" title="">PEC 241/2016 – Teto de gastos públicos</a> </td>
+                                                <td>Sim</td>
+                                                <td>30</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr id="law-12966" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Será estabelecido, para cada ano, um teto para despesas destinadas às políticas públicas dos Poderes Executivo, Legislativo e Judicial da União Federal, inclusive para o Tribunal de Contas da União, do Ministério Público da União e da Defensoria Pública da União. Os limites dos gastos públicos deverão ser observados por todos os órgãos e entidades da Administração Pública federal, direta e indireta, pelos fundos e as fundações instituídos e mantidos pelo Poder Público e pelas empresas estatais dependentes.&nbsp;</p>
+                                                    <p><a href="http://www.votenaweb.com.br/projetos/pec-241-2016" data-original-title="" title="">http://www.votenaweb.com.br/projetos/pec-241-2016</a>&nbsp;</p>
+                                                    <p>Explicação da pontuação: A PEC 241 é avaliada positivamente pelo Ranking em razão de trazer avanços a responsabilidade fiscal, criando freios rígidos e necessários aos gastos públicos e na contenção da dívida pública. Criando também, impedimentos para que proposições demagógicas e populistas venham a triunfar, e gerando um maior senso de prioridades com o dinheiro público.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12971" data-original-title="" title="">PEC 171-1993 - Criança e adolescente</a> </td>
+                                                <td>Sim</td>
+                                                <td>15</td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr id="law-12971" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Esta PEC vai reduzir a maioridade penal para 16 anos. Isso significa que&nbsp;os adolescentes maiores de 16 anos serão punidos pela Justiça como adultos se cometerem crimes.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12985" data-original-title="" title="">PEC 233/2016 - Planejamento e orçamento</a> </td>
+                                                <td>Sim</td>
+                                                <td>5</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr id="law-12985" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>(PEC) 159/2015, mais conhecida como PEC dos Precatórios. A proposta permite o uso de dinheiro depositado na Justiça para pagar dívidas públicas. Os precatórios são dívidas que o governo tem com o cidadão, ou empresa, que ganhou um processo judicial transitado em julgado http://www12.senado.leg.br/noticias/materias/2016/06/07/aprovada-com-emendas-pec-dos-precatorios-retorna-para-a-camara</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-74" data-toggle="collapse" data-parent=".panel-quality-74" data-original-title="" title=""> <strong>PL - Projeto de Lei)</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-74">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12989" data-original-title="" title="">PL 2960/2015 - Econômico - Fiscalização e controle</a> </td>
+                                                <td>Sim</td>
+                                                <td>20</td>
+                                                <td>20</td>
+                                            </tr>
+                                            <tr id="law-12989" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p><span>Dispõe sobre o Regime Especial de Regularização Cambial e Tributária de recursos, bens ou direitos de origem lícita, não declarados ou declarados incorretamente, remetidos, mantidos no exterior ou repatriados por residentes ou domiciliados no País, e dá outras providências.</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12977" data-original-title="" title="">PL 4567/2016 – &nbsp;Econômico - Minas e energia</a> </td>
+                                                <td>Sim</td>
+                                                <td>30</td>
+                                                <td>30</td>
+                                            </tr>
+                                            <tr id="law-12977" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Este projeto de lei vai mudar uma regra no marco que regulamenta a exploração de pre-sal no Brasil.Este projeto desobriga a Petrobras de integrar consórcios de exploração do pré-sal e exclui a cláusula estabelecida na lei de partilha, de 2010, que condiciona a participação da estatal em, no mínimo, 30% em cada licitação.Ou seja, este projeto quer acabar com a obrigatoriedade de a Petrobras ter que participar em, no mínimo, 30% da exploração e produção em todos os poços de pre-sal.Dessa forma, caso a Petrobras não tenha condições, ou não tenha interesse em assumir os 30% em todos os poços de exploração e produção, ela poderá assumir uma parcela menor, ou até mesmo não participar de alguns, deixando que as outras empresas do consórcio invistam.Segundo o senador, a Petrobras enfrenta uma crise interna e financeira que dificulta a atração de investimentos necessários para a empresa cumprir o cronograma dos projetos. Para ele, a obrigatoriedade da Petrobras participar em no mínimo 30% não é vantajosa economicamente para a empresa.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-75" data-toggle="collapse" data-parent=".panel-quality-75" data-original-title="" title=""> <strong>PLC - Projeto de Lei da Câmara dos Deputados (SF))</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-75">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-11779" data-original-title="" title="">PLC 8077-2014 - Criança e adolescente</a> </td>
+                                                <td>Sim</td>
+                                                <td>10</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr id="law-11779" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Este projeto de lei dobrará a pena de prisão de quem corromper ou facilitar a corrupção de menor de 18 anos, para praticar crimes como: - crime hediondo- homicídio - lesão corporal grave ou seguida de morte - roubo&nbsp; - crimes relacionados a drogas (compra, venda, fabricação etc). Pela lei atual, a punição para quem corrompe menores é prisão de 1 a 4 anos, ampliada de 1/3 se houver indução do menor para participar de crimes hediondos. De acordo com o deputado, cada vez mais os menores de idade estão participando de crimes graves, por isso, é necessário endurecer as penas. </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12102" data-original-title="" title="">PLCS 60-2014 - Economia</a> </td>
+                                                <td>Não</td>
+                                                <td>5</td>
+                                                <td>-5</td>
+                                            </tr>
+                                            <tr id="law-12102" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> O projeto modificará a Lei Geral da Micro e Pequena Empresa, ampliando o número de beneficiários do SIMPLES Nacional (SuperSimples).O Supersimples é um regime tributário especial que reúne o pagamento de seis tributos federais, o ICMS (imposto sobre operações relativas à circulação de mercadorias e sobre prestações de serviços de transporte interestadual, intermunicipal e de comunicação), que é de abrangência estadual; e o ISS (Imposto sobre Serviços), que é de abrangência municipal.Com esse regime, o micro e pequeno empresário recolhe, numa única guia, um percentual sobre o faturamento que é repassado para a União, os governos estaduais e as prefeituras.&nbsp; Pela proposta o critério para ser beneficiário do Supersimples será o porte da empresa e faturamento e não mais o tipo da atividade exercida.&nbsp; Pelo antigo Supersimples, não podiam participar, por exemplo, empresas prestadoras de serviços decorrentes de atividade intelectual, de natureza técnica, científica, desportiva. Pela proposta, profissionais como médicos, advogados, jornalistas, publicitários, auditores e várias atividades do setor de serviços serão contempladas. Será criado o Cadastro Único Nacional para diminuir a burocracia. Desse modo, todas as empresas, inclusive as que não sejam MPE (micro e pequenas empresas), poderão obter a baixa de seus registros e inscrições imediatamente após o encerramento das suas operações, sem a necessidade de apresentar certidões negativas de débito. Caso sejam identificados débitos tributários posteriormente, os sócios serão responsabilizados. Fonte: este texto foi retirado do site brasil.gov.br&nbsp; - Portal Brasil Link: http://www.senado.gov.br/atividade/materia/getPDF.asp?t=151926&amp;tp=1 Situação: Aprovado Origem: Político Data de Apresentação: 05/06/2014 Data de votação: 16/07/2014 Autores: Vaz de Melo Tags: economia, impostos Categorias: economia </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12104" data-original-title="" title="">PLC 6602-2013 - Ambiente</a> </td>
+                                                <td>Sim</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr id="law-12104" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> O projeto proibirá o uso de animais em pesquisas, ensino e testes que tenham por objetivo a produção de cosméticos.Nas pesquisas e atividades de ensino autorizadas, o mesmo animal não poderá ser utilizado mais de uma vez. Nos procedimentos que causem trauma ao animal, poderá ser realizado o teste mais de uma vez, enquanto durar o efeito da primeira aplicação do analgésico. Contudo, o animal deverá ser sacrificado antes que desperte. Quem descumprir a Lei será punido com multa, de até 50 mil reais. De acordo com o deputado, os animais também têm que ser protegidos. Muitos animais são utilizados de forma cruel em pesquisas com o objetivo de se criar e aperfeiçoar cosméticos de uso humano, o que não deve ser aceito. </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-11824" data-original-title="" title="">PLC 6738-2013 - Administração pública, Trabalho</a> </td>
+                                                <td>Não</td>
+                                                <td>-5</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr id="law-11824" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> O projeto reservará para os negros 20% das vagas em concursos públicos da administração pública federal. A reserva ocorrerá sempre que o número de vagas for igual ou superior a três.Os candidatos negros que forem aprovados na “ampla concorrência”, ou seja, na parte das vagas que não estão nas cotas, não serão contados para o efeito dessa reserva. Ou seja, os 20% reservados serão para os negros não aprovados pelo sistema eliminatório normal. A Lei terá prazo de 10 anos. De acordo com o Poder Executivo, a presença de negros na administração pública federal é muito pequena em relação à de brancos. Além disso, as diferenças raciais ainda estão muito fortes no país. Por isso, é necessário políticas afirmativas, por um prazo de dez anos pelo menos. &nbsp; </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-76" data-toggle="collapse" data-parent=".panel-quality-76" data-original-title="" title=""> <strong>PLN - Projeto de Lei (CN))</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-76">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-11802" data-original-title="" title="">PLN 36-2014 - Economia</a> </td>
+                                                <td>Não</td>
+                                                <td>-15</td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr id="law-11802" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Este projeto de lei vai alterar as regras para calcular a meta de superavit primário - valor que sobra em relação à arrecadação e os gastos do governo.&nbsp;Pela lei atual, a meta de superávit primário para este ano é de 116 bilhões, ou seja, o governo tem que economizar 116 bilhões para pagar suas dívidas e juros.Pela lei atual, o governo pode abater os gastos que ele teve com o PAC e com desonerações fiscais, mas o abatimento máximo permitido é de 67 bilhões de reais.Este projeto de lei propõe acabar com este limite, permitindo que meta do superávit primário seja reduzida através da subtração do valor total de todas as despesas do PAC e das desonerações de impostos.&nbsp; Contexto: no Brasil existe a Lei de Responsabilidade Fiscal que proíbe os governos de gastarem mais do que arrecadam. O objetivo desta lei é controlar as contas e ajudar o governo a atingir as metas de superavit. Na nossa legislação existem leis que punem os gestores públicos que não cumprem as metas.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12951" data-original-title="" title="">PLN 1/2016 - Meta Fiscal de 2016</a> </td>
+                                                <td>Não</td>
+                                                <td>20</td>
+                                                <td>-20</td>
+                                            </tr>
+                                            <tr id="law-12951" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> PLN 1/2016 Meta Fiscal 2016 O Congresso Nacional aprovou na madrugada desta quarta-feira (25), em sessão conjunta de deputados e senadores, o projeto de lei que reduz a meta fiscal de 2016 e autoriza o governo federal a fechar o ano com um déficit (despesas maiores do que receitas) de até R$ 170,5 bilhões nas contas públicas. Se confirmado esse déficit ao final do ano, será o pior resultado da série histórica iniciada em 1997. A aprovação foi por votação simbólica (sem a contagem de votos no painel eletrônico) após mais de 16 horas de sessão. A aprovação da meta era considerada essencial pela equipe econômica do governo do presidente em exercício Michel Temer porque, sem essa permissão para fechar o ano com déficit, várias despesas teriam que ser cortadas, o que afetaria investimentos e programas sociais. http://g1.globo.com/economia/noticia/2016/05/congresso-reduz-meta-fiscal-e-autoriza-deficit-de-ate-r-1705-bilhoes.html http://g1.globo.com/politica/noticia/2016/05/temer-diz-que-aprovacao-de-nova-meta-fiscal-foi-bela-vitoria.html </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-78" data-toggle="collapse" data-parent=".panel-quality-78" data-original-title="" title=""> <strong>PLP - Projeto de Lei Complementar)</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-78">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-7260" data-original-title="" title="">PLP 37-2015 - Administração pública</a> </td>
+                                                <td>Não</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr id="law-7260" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Este projeto de lei vai permitir que os estados e municípios renegociem suas dívidas com a União, mesmo sem as regulamentações de lei específicas feitas pelo governo federal. Em 2014 o Congresso aprovou uma lei que obriga a renegociação de dívidas, mas cabe ao governo federal regulamentar a lei, ou seja, especificar os aspectos práticos, para que a lei funcione de verdade. Este projeto quer então permitir que os estados e municípios devedores alterem algumas regras contratuais de suas dívidas, sem precisar de regulamentação da lei que o governo federal ainda não fez.&nbsp; Pelo projeto a União terá um prazo de 30 dias para assinar os aditivos contratuais, que são novas regras extras que mudam a forma de calcular a dívida. </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12945" data-original-title="" title="">PLP 124/2015 – ADMINISTRAÇÃO PÚBLICA</a> </td>
+                                                <td>Sim</td>
+                                                <td>10</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr id="law-12945" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Aumentará para 75 anos a data da aposentadoria compulsória, por idade, dos servidores públicos da União Federal, dos Estados, do Distrito Federal e dos Municípios. Este projeto de lei aumentará para 75 anos a data da aposentadoria compulsória, por idade, dos servidores públicos da União Federal, dos Estados, do Distrito Federal e dos Municípios. Assim, a aposentadoria compulsória por idade deixará de ocorrer aos 70 anos, passando para 75 anos. Serão aposentados compulsoriamente com 75 anos de idade: - os servidores públicos da União Federal, dos Estados, do Distrito Federal e dos Municípios; - os membros do Poder Judiciário; - os membros do Ministério Público; - os membros das Defensorias Públicas; - os membros dos Tribunais e dos Conselhos de Contas.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12987" data-original-title="" title="">PLP 257/2016 - Econômico - Planejamento e orçamento</a> </td>
+                                                <td>Não</td>
+                                                <td>15</td>
+                                                <td>-15</td>
+                                            </tr>
+                                            <tr id="law-12987" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px">
+                                                    <p>Autoriza a União a adotar, nos contratos de refinanciamento de dívidas celebrados com os Estados e o Distrito Federal com base na Lei nº 9.496, de 11 de setembro de 1997, e nos contratos de abertura de crédito firmados com os Estados ao amparo da Medida Provisória nº 2.192-70, de 24 de agosto de 2001, mediante celebração de termo aditivo, o prazo adicional de até duzentos e quarenta meses para o pagamento das dívidas refinanciadas.</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href=".panel-quality-85" data-toggle="collapse" data-parent=".panel-quality-85" data-original-title="" title=""> <strong>PRC - Projeto de Resolução)</strong> </a>
+                                </div>
+                                <div class="table-responsive collapse panel-quality-85">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Lei</th>
+                                                <th>Votou</th>
+                                                <th>Valor da lei</th>
+                                                <th>Pontos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <a class="open-law" href="#" data-target="law-12952" data-original-title="" title="">PRC 8/2007 - Criação de 2 comissões da Câmara</a> </td>
+                                                <td>Não</td>
+                                                <td>-3</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr id="law-12952" style="display: none;" class="law-description">
+                                                <td colspan="4" style="padding: 15px; line-height: 25px"> Cria, no âmbito da Câmara dos Deputados, a Comissão da Mulher, do Idoso, da Criança e do Adolescente, da Juventude e Minorias, aumento da burocracia do legislativo. http://www.camara.gov.br/proposicoesWeb/fichadetramitacao?idProposicao=340812 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="author" class="tab-pane fade">
+                            <p>&nbsp;</p>
+                            <p class="text-justify"> As leis de autoria do parlamentar estão agrupadas por tipo de leis. </p>
+                            <p><b>Este parlamentar não possui nenhuma lei de sua autoria.</b></p>
+                        </div>
+                        <div id="reviser" class="tab-pane fade">
+                            <p>&nbsp;</p>
+                            <p class="text-justify"> As leis de revisão do parlamentar estão agrupadas por tipo de leis. </p>
+                            <p><b>Este parlamentar não revisou nenhuma lei.</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Comissão -->
+        </div>
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  

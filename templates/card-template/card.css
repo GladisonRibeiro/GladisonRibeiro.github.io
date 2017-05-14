@@ -1,0 +1,95 @@
+.card {
+    display: inline-block;
+    position: relative;
+    
+    text-align: left;
+    
+    width: 25em;
+    height: 37.5em;
+    background: #db3042;
+    -webkit-box-shadow: 0.3em 0.3em 1.8em 0em rgba(0,0,0,0.75);
+    -moz-box-shadow: 0.3em 0.3em 1.8em 0em rgba(0,0,0,0.75);
+    box-shadow: 0.4em 0.4em 1.8em 0em rgba(0,0,0,0.75);
+    
+    padding: 1em 0em 1em 1em;
+    color: #fff;
+}
+
+.card ::selection {
+    color: none; 
+    background: none;
+}
+
+.card-bar-box {
+    width: calc(100% - 1em);
+    background: #db3042;
+    border: 0.5em solid #fff;
+}
+
+.card-bar-box div {
+    display: inline-block;
+}
+
+.card-info-nome {
+    margin-left: 0.5em;
+    font-size: 1.5em;
+    line-height: 2.2em;
+    width: 11em;
+}
+
+.card-info-partido {
+    float: right;
+    width: 3.2em;
+    height: 3.2em;
+}
+
+.card-info-partido img{
+    width: 100%;
+    height: 100%;
+    float: right;
+    margin-bottom: -1.05em;
+    object-fit: contain;
+}
+
+.card-info-img {
+    width: calc(100% - 1em);
+    height: 18em;
+    border: 0.5em solid #fff;
+    border-top: none;
+    border-bottom: none;
+    object-fit: cover;
+}
+
+.card-attr-box div {
+    width: calc(100% - 1em);
+    padding: 0.5em 0em 0em 0em;
+    border: 0.5em solid #c0c0c0;
+    border-top: none;
+    cursor: pointer;
+    
+    background: #fff;
+    color: #000;
+}
+
+.card-attr-box div:first-child {
+    border: 0.5em solid #c0c0c0;
+}
+
+.card-attr-box div:hover {
+    background-color: #618CA7;
+    color: #fff;
+}
+
+.card-attr-box div label {
+    margin-left: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
+.card-attr-box div span {
+    margin-right: 1em;
+    float: right;
+    font-size: 1.5em;
+    line-height: 1em;
+}

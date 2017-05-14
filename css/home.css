@@ -1,0 +1,35 @@
+.titulo {
+    color: darkslategray;
+    font-family: Century Gothic;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.botao {
+    border-radius: none;
+    border: none;
+    height: 6rem;
+    width: 25rem;
+    margin-bottom: 0.5em;
+    background-color: #349d91;
+    appearence: none;
+    font-family: Century Gothic;
+    font-size: 2em;
+    color: floralwhite;
+    font-weight: bold;
+}
+
+.container-buttons{
+    margin-top: 4em;
+}
+
+.img-rounded{
+    margin-top: 2em;
+    height: auto;
+    width: 15em;
+}
+
+.page-content{
+   height: 100%;
+   display: inline;
+}
