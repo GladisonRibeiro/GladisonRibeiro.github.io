@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html style="height: 100%">
+
   <head>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta charset="UTF-8">
+    <title>Politicard</title>
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
 
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
@@ -10,7 +21,7 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#618CA7">
 
     <link rel="stylesheet" href="/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
@@ -19,8 +30,15 @@
     <link rel="stylesheet" href="css/arena.css">
     <link rel="stylesheet" href="css/galeria.css">
     <style>
-        .navbar { border-radius:0; };
-        html,body{height:100% !important}
+      .navbar {
+        border-radius: 0;
+      }
+
+      ;
+      html,
+      body {
+        height: 100% !important
+      }
     </style>
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.min.js"></script>
@@ -29,9 +47,11 @@
     <script src="js/arena.js"></script>
     <script src="js/galeria.js"></script>
   </head>
+
   <body ng-app="politicard" class="index">
     <div class="page-injector-content fundo">
-        <div style="height:100%" ui-view></div>
+      <div style="height:100%" ui-view></div>
     </div>
   </body>
+
 </html>
