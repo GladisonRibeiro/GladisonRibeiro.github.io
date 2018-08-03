@@ -7,9 +7,10 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/0.77b23bd6e1fce3454998.js",
-        "/1.bc194ffe5a63d064c6bd.js",
-        "/2.7994b7ff349d4e4017d3.js",
+        "/0.311ca2d8670c2c97bc0d.js",
+        "/1.57114ed531adc8465ac2.js",
+        "/2.7cac8bcda1da666c7b99.js",
+        "/3.6f73e25efaebc0e0cb7e.js",
         "/Linearicons-Free.03e91f122aa5fd425abb.woff2",
         "/Linearicons-Free.2781bf543c08d394dc78.svg",
         "/Linearicons-Free.2f3e9f80fff7d699dd3d.ttf",
@@ -22,11 +23,11 @@
         "/fontawesome-webfont.b06871f281fee6b241d6.ttf",
         "/fontawesome-webfont.fee66e712a8a08eef580.woff",
         "/index.html",
-        "/main.a2a59e1f814cc6855ebe.js",
-        "/polyfills.1f682948bdc523f3cb0b.js",
-        "/runtime.068e56a4e60e0cd92527.js",
+        "/main.303724be475437af35f5.js",
+        "/polyfills.a5e611dccaf86beb778a.js",
+        "/runtime.425e864d9834be5205c3.js",
         "/scripts.4407c638d3ad6205e10b.js",
-        "/styles.9d8af57cd9c411ac9b38.css"
+        "/styles.cb89922882e46678c2c7.css"
       ],
       "patterns": []
     },
@@ -54,6 +55,7 @@
         "/assets/imgs/graph-token-distrubuition-text.png",
         "/assets/imgs/graph-token-distrubuition.png",
         "/assets/imgs/header-product-template.jpg",
+        "/assets/imgs/header-prvn-token-purchase.jpg",
         "/assets/imgs/logo/logo-pirovani-watches-navbar-full.png",
         "/assets/imgs/logo/logo-pirovani-watches-navbar.png",
         "/assets/imgs/product/01-ledger-inox-black.png",
@@ -156,9 +158,10 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/0.77b23bd6e1fce3454998.js": "7fe7e3b3ad9de6a8022312f369ac1e6f4377a3f8",
-    "/1.bc194ffe5a63d064c6bd.js": "4ce7e30a3470d221127905541fbe9c7b26822f3b",
-    "/2.7994b7ff349d4e4017d3.js": "de6b2b78b79bf02bf5384d7e159990b188b86add",
+    "/0.311ca2d8670c2c97bc0d.js": "d1ce4e027bff7aa5de88a3060532ea9f152e9fbb",
+    "/1.57114ed531adc8465ac2.js": "503809c608187133835e8725df2dfb31a5814719",
+    "/2.7cac8bcda1da666c7b99.js": "ff1f6e088d7289848d6e95b368a06b1dd9b81585",
+    "/3.6f73e25efaebc0e0cb7e.js": "bc0ad275b3f86e4e436b1c70da75ba84aecf03e2",
     "/Linearicons-Free.03e91f122aa5fd425abb.woff2": "c87a3db06c5db4e75e639382f174eafa439aeb27",
     "/Linearicons-Free.2781bf543c08d394dc78.svg": "6813c599f27c0bd3ad8e0e1f480d04c692824920",
     "/Linearicons-Free.2f3e9f80fff7d699dd3d.ttf": "da121169778c307f3af734f00f198b1e347f1586",
@@ -183,6 +186,7 @@
     "/assets/imgs/graph-token-distrubuition-text.png": "94038be21b93491a96f12b59b28c3e60a4d5b08c",
     "/assets/imgs/graph-token-distrubuition.png": "7ef2777c450b139fad9f83d6bef6db2a4a9585b7",
     "/assets/imgs/header-product-template.jpg": "e7f3a8df909ae1bab40d5dcd695dad55c37fa6ad",
+    "/assets/imgs/header-prvn-token-purchase.jpg": "e09a8c5d2200de8a6fa35f6c326099c39129ca22",
     "/assets/imgs/logo/logo-pirovani-watches-navbar-full.png": "1267b7d4f03d1341c479c9d677d250161a91e65d",
     "/assets/imgs/logo/logo-pirovani-watches-navbar.png": "97d5159dbc063c375963a671c27d7e5152cf92e3",
     "/assets/imgs/product/01-ledger-inox-black.png": "84635eaf2728e7a6092768b1fd6639adf4e05bba",
@@ -285,12 +289,12 @@
     "/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
     "/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
     "/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "/index.html": "5c57d1fe8c7a01cc4850382e8f9e8f851285e7af",
-    "/main.a2a59e1f814cc6855ebe.js": "9ecc6da02cb55b6f2935e57c7ba8e7d1f9ebfa3c",
-    "/polyfills.1f682948bdc523f3cb0b.js": "22f5c7d2a7ba8b39450284707ae4811616cdd3ad",
-    "/runtime.068e56a4e60e0cd92527.js": "0bb8f7057febee36e5973b1b656abeec04ab00a3",
+    "/index.html": "cb14818123a2c4ddfcf4ecc0cc8ae0bf24f26758",
+    "/main.303724be475437af35f5.js": "668f0d498116b21b3cc8109318ea4191e5d61467",
+    "/polyfills.a5e611dccaf86beb778a.js": "ad3e139f4e46a56685ccbe012b885aac67989adb",
+    "/runtime.425e864d9834be5205c3.js": "84e7f603c19a6e7cee92fc7ec0d4fd8974969f8f",
     "/scripts.4407c638d3ad6205e10b.js": "606d978853d207ef968fd8149b2b2a39f29bbfb8",
-    "/styles.9d8af57cd9c411ac9b38.css": "7a5b8f4f36c361d93348e9e9caf1e5d33106d286"
+    "/styles.cb89922882e46678c2c7.css": "1a514456054d10cb1afde0062d8859c803d32585"
   },
   "navigationUrls": [
     {
