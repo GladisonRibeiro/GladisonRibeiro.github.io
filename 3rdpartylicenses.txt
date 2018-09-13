@@ -350,6 +350,14 @@ signature_pad@2.3.2
 MIT
 MIT
 
+firebase@5.4.2
+Apache-2.0
+Apache-2.0
+
+@firebase/polyfill@0.3.3
+Apache-2.0
+Apache-2.0
+
 @firebase/app@0.3.3
 Apache-2.0
 Apache-2.0
@@ -367,14 +375,6 @@ Apache-2.0
 Apache-2.0
 
 @firebase/webchannel-wrapper@0.2.8
-Apache-2.0
-Apache-2.0
-
-firebase@5.4.2
-Apache-2.0
-Apache-2.0
-
-@firebase/polyfill@0.3.3
 Apache-2.0
 Apache-2.0
 
