@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Unimed Noroeste Capixaba Cooperado.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E49E2AB6FA2BD2E9B77B94ED2348EE56921B7B69</string>
+				<key>dateExpires</key>
+				<string>17/09/2021</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>SARVFGL53U.br.coop.unimednoroestecapixaba.mobile.cooperado</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>SARVFGL53U</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Unimed Noroeste Capixaba Cooperado.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>a82e0639-0a03-43df-98e0-d8516bcd7051</string>
+				<key>name</key>
+				<string>Unimed Noroeste Capixaba Cooperado</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>SARVFGL53U</string>
+				<key>name</key>
+				<string>Unio Soluções em Tecnologia Ltda.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

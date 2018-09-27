@@ -1,31 +1,326 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8">
-  <title>Unimed Corretora Seguros</title>
-  <base href="/">
+<!DOCTYPE html>
+<html>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#0F2C52">
-  <meta name="description" content="Central de ajuda NucleOS" />
-  <link rel="apple-touch-startup-image" href="assets/icons/icon-192x192.png">
-  <meta name="apple-mobile-web-app-title" content="Unimed Corretora">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#0F2C52">
-  <!-- <link rel="apple-touch-icon" href="assets/icons/icon-48x48.png"> -->
-  <link rel="apple-touch-icon" href="assets/icons/icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon-152x152.png">
-  <!-- <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/icon-168x168.png"> -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon-192x192.png">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UnioStore</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
 
-<link rel="stylesheet" href="styles.5eaae0cb500784229520.css"></head>
 <body>
-  <ucs-root class="w-100 h-100"></ucs-root>
-  <noscript>
-    <h3 style="color: #0F2C52; font-family: Helvetica; margin: 2rem;">
-      Desculpe, esse app não pode ser apresentado sem javascript.
-    </h3>
-  </noscript>
-<script type="text/javascript" src="runtime.cb167557068b515a4e73.js"></script><script type="text/javascript" src="polyfills.57c77aa09b7286420aca.js"></script><script type="text/javascript" src="scripts.b4ebf2267e53715c51dd.js"></script><script type="text/javascript" src="main.2d41f4b55bc4eb98533a.js"></script></body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top cabecalho">
+
+        <a class="navbar-brand d-none d-sm-block" href="./"><img src="./img/logotipo-unio-app-store-small.png" class="img-fluid" /></a>
+        <a href="./" class="navbar-brand d-block d-sm-none"><img src="./img/logotipo-unio-app-store-small.png" width="200px" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto  d-block d-sm-none">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Políticas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nota Legal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Unio Soluções 2018</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main main-app">
+        <div class="container grid-app pt-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <img src="./img/noroeste-capixaba.png" />
+                        </div>
+                        <div class="p-2 bd-highlight text-left d-none d-sm-block">
+                            <div class="d-flex flex-column bd-highlight mb-3">
+                                <div class="p-0 bd-highlight">
+                                    <h3 class="mb-0">Unimed Noroeste Capixaba</h3>
+                                </div>
+                                <div class="p-0 bd-highlight mb-4">Unimed Noroeste Capixaba Cooperativa de Trabalho
+                                    Médico</div>
+                                <div class="p-0 bd-highlight">
+                                    <a href="itms-services://?action=download-manifest&url=https://gladisonribeiro.github.io/manifest.plist"
+                                        class="btn btn-primary btn-download mt-4 py-2">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bd-highlight text-left d-block d-sm-none">
+                            <div class="d-flex flex-column bd-highlight">
+                                <div class="p-0 bd-highlight">
+                                    <h5 class="mb-0">Unimed Noroeste Capixaba</h5>
+                                </div>
+                                <div class="p-0 bd-highlight small-sub">
+                                    Unimed Noroeste Capixaba Cooperativa de Trabalho Médico
+                                </div>
+                                <div class="bd-highlight">
+                                    <button class="btn btn-primary btn-download-small w-100 btn-download">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="d-flex flex-column bd-highlight mb-3 grid-versao">
+                        <div class="p-2 bd-highlight">
+                            <div class="d-flex justify-content-between">
+                                <p class="h5 mb-0">Descrição</p>
+                                <p class="h6 historico" data-toggle="modal" data-target="#exampleModal"> Ver histórico
+                                    de informações</p>
+                            </div>
+                            <hr class="my-2" />
+                            <p>Com o aplicativo Unimed Noroeste Capixaba, você acessa o seu plano...</p>
+                        </div>
+                        <div class="p-2 bd-highlight text-left"></div>
+                    </div>
+                    <div class="d-flex flex-column bd-highlight mb-3 grid-versao">
+                        <div class="p-2 bd-highlight">
+                            <p class="h5">Versão</p>
+                            <hr class="my-2" />
+                            <p>Versão 2.1.0</p>
+                            <p class="font-weight-bold">Novidades dessa versão</p>
+                            <p>- Melhorias e correções de bugs</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column bd-highlight mb-3 grid-info">
+                        <div class="px-2 pt-2 pb-0 bd-highlight">
+                            <p class="h5">Informações</p>
+                            <hr class="my-2" />
+                        </div>
+                        <div class="pt-0 bd-highlight grupo-informacoes d-none d-sm-block">
+                            <div class="d-flex  bd-highlight">
+                                <div class="order-1 w-25  text-right px-2 pb-2 pt-0 bd-highlight">Vendedor</div>
+                                <div class="order-2 w-50 px-2 pb-2 pt-0 bd-highlight">Unimed Noroeste Capixaba</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-25 text-right p-2 bd-highlight">Tamanho</div>
+                                <div class="order-2 p-2 bd-highlight">21.9 MB</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-25 text-right p-2 bd-highlight">Categoria</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Negócios</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-25 text-right text-nowrap p-2 bd-highlight">Compatibilidade</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Negócios</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-25 text-right p-2 bd-highlight">Idiomas</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Portugês</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-25 text-right p-2 bd-highlight">Classificação</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">+4</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-25 text-right p-2 bd-highlight">Preço</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Grátis</div>
+                            </div>
+                        </div>
+                        <div class="pt-0 bd-highlight grupo-informacoes d-block d-sm-none">
+                            <div class="d-flex  bd-highlight">
+                                <div class="order-1 w-50  text-right px-2 pb-2 pt-0 bd-highlight">Vendedor</div>
+                                <div class="order-2 w-50 px-2 pb-2 pt-0 bd-highlight">Unimed Noroeste Capixaba</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-50 text-right p-2 bd-highlight">Tamanho</div>
+                                <div class="order-2 p-2 bd-highlight">21.9 MB</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-50 text-right p-2 bd-highlight">Categoria</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Negócios</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-50 text-right text-nowrap p-2 bd-highlight">Compatibilidade</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Negóciosss</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-50 text-right p-2 bd-highlight">Idiomas</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Portugês</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-50 text-right p-2 bd-highlight">Classificação</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">+4</div>
+                            </div>
+                            <div class="d-flex bd-highlight">
+                                <div class="order-1 w-50 text-right p-2 bd-highlight">Preço</div>
+                                <div class="order-2 w-50 p-2 bd-highlight">Grátis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="d-flex flex-column bd-highlight mb-3 grid-versao">
+                        <div class="p-2 bd-highlight">
+                            <p class="h5">Capturas de tela</p>
+                            <hr class="my-2" />
+                            <div class="scrolling-wrapper">
+                                <div class="cardc">
+                                    <img src="./img/01-home-android.png" class="rounded float-left" alt="">
+                                </div>
+                                <div class="cardc">
+                                    <img src="./img/02-extrato-android.png" class="rounded float-left" alt="">
+                                </div>
+                                <div class="cardc">
+                                    <img src="./img/03-menu-android.png" class="rounded float-left" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Histórico de Versões</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <strong>1.0.0</strong>
+                                    </div>
+                                    <div>25/09/2018</div>
+                                </div>
+                                <p>- Publicação inicial</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary btn-download" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- <footer class="footer">
+        <div class="container d-none d-sm-block">
+            <ul class="list-inline">
+                <li class="list-inline-item">Política</li>
+                <li class="list-inline-item">Nota Legal</li>
+                <li class="list-inline-item">Unio Soluções - 2017</li>
+            </ul>
+        </div>
+        <div class="container d-block d-sm-none">
+            &nbsp;
+        </div>
+    </footer> -->
+    <footer class="wrapper footer-container">
+        <div class="d-none d-sm-block">
+            <div class="float-left mt-10 ">
+                <ul style="margin-bottom: 10px; padding-top: 10px">
+                    <li class="link-rodape">
+                        <a href="./politica.html">Política</a>
+                    </li>
+                    <li class="link-rodape">
+                        <a href="./nota-legal.html">Nota Legal</a>
+                    </li>
+                    <li class="link-rodape">
+                        @Unio Soluções - 20172
+                    </li>
+                </ul>
+            </div>
+            <div class="float-right">
+                <ul class="redes-sociais my-0 pt-0">
+                    <li style="list-style: none; display: inline-block; margin-right: 30px;">
+                        <a href="https://twitter.com/uniosolucoes" target="_blank"><i aria-hidden="true" class="fa fa-twitter-square"
+                                style=" color: #0d2240 !important; font-size: 30px;"></i></a>
+                    </li>
+                    <li style="list-style: none; display: inline-block; margin-right: 30px;"><a href="https://www.linkedin.com/company/25039523/"
+                            target="_blank"><i aria-hidden="true" class="fa fa-linkedin-square" style=" color: #0d2240 !important; font-size: 30px;"></i></a></li>
+                    <li style="list-style: none; display: inline-block; margin-right: 30px;"><a href="https://www.youtube.com/channel/UCf9ycXhaNjyhSQBypTRsM1Q"
+                            target="_blank"><i aria-hidden="true" class="fa fa-youtube-square" style=" color: #0d2240 !important; font-size: 30px;"></i></a></li>
+                    <li style="list-style: none; display: inline-block; margin-right: 30px;"><a href="https://www.facebook.com/uniosolucoes/"
+                            target="_blank"><i aria-hidden="true" class="fa fa-facebook-square" style=" color: #0d2240 !important; font-size: 30px;"></i></a></li>
+                    <li style="list-style: none; display: inline-block; margin-right: 30px;"><a href="https://www.instagram.com/uniosolucoes/"
+                            target="_blank"><i aria-hidden="true" class="fa fa-instagram" style=" color: #0d2240 !important; font-size: 30px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-block d-sm-none">
+            <div class="d-flex flex-column bd-highlight">
+                <div class=" bd-highlight">
+                    
+                    <div class="d-flex justify-content-center mt-2 mb-0">
+                        <div class="link-rodape2">
+                            <a href="./politica.html">Política</a>
+                        </div>
+                        <div class="link-rodape2">
+                            <a href="./nota-legal.html">Nota Legal</a>
+                        </div>
+                        <div class="link-rodape2">
+                            @Unio Soluções - 2017
+                        </div>
+                    </div>
+                </div>
+                <div class="bd-highlight">
+                    <div class="d-flex justify-content-center" style="font-size: 30px">
+                        <div class="mr-2">
+                            <a href="https://twitter.com/uniosolucoes" target="_blank">
+                                <i aria-hidden="true" class="fa fa-twitter-square" style=" color: #0d2240 !important;"></i>
+                            </a>
+                        </div>
+                        <div class="mr-2">
+                            <a href="https://www.linkedin.com/company/25039523/" target="_blank"><i aria-hidden="true"
+                                    class="fa fa-linkedin-square" style=" color: #0d2240 !important;"></i>
+                            </a>
+                        </div>
+                        <div class="mr-2">
+                            <a href="https://www.facebook.com/uniosolucoes/" target="_blank"><i aria-hidden="true"
+                                    class="fa fa-facebook-square" style=" color: #0d2240 !important"></i>
+                            </a>
+                        </div>
+                        <div class="mr-2">
+                            <a href="https://www.instagram.com/uniosolucoes/" target="_blank">
+                                <i aria-hidden="true" class="fa fa-instagram" style=" color: #0d2240 !important;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <ul class="redes-sociais2 my-0 pt-0">
+                        <li style="list-style: none; display: inline-block;">
+                            <a href="https://twitter.com/uniosolucoes" target="_blank"><i aria-hidden="true" class="fa fa-twitter-square"
+                                    style=" color: #0d2240 !important;"></i></a>
+                        </li>
+                        <li style="list-style: none; display: inline-block;"><a href="https://www.linkedin.com/company/25039523/"
+                                target="_blank"><i aria-hidden="true" class="fa fa-linkedin-square" style=" color: #0d2240 !important;"></i></a></li>
+                        <li style="list-style: none; display: inline-block;"><a href="https://www.youtube.com/channel/UCf9ycXhaNjyhSQBypTRsM1Q"
+                                target="_blank"><i aria-hidden="true" class="fa fa-youtube-square" style=" color: #0d2240 !important;"></i></a></li>
+                        <li style="list-style: none; display: inline-block;"><a href="https://www.facebook.com/uniosolucoes/"
+                                target="_blank"><i aria-hidden="true" class="fa fa-facebook-square" style=" color: #0d2240 !important"></i></a></li>
+                        <li style="list-style: none; display: inline-block;"><a href="https://www.instagram.com/uniosolucoes/"
+                                target="_blank"><i aria-hidden="true" class="fa fa-instagram" style=" color: #0d2240 !important;"></i></a></li>
+                    </ul> -->
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
 </html>
