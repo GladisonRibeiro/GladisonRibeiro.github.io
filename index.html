@@ -10,6 +10,25 @@
     <link href="./css/style.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+		body {
+			text-align: center;
+		}
+		video {
+			width: 320px;
+			height: 240px;
+			margin: 0 auto;
+		}
+		canvas {
+			width: 320px;
+			height: 240px;
+			margin: 0 auto;
+		}
+		.btn-box {
+			text-align: center;
+			margin: 0 auto;
+		}
+	</style>
 </head>
 
 <body>
@@ -17,8 +36,10 @@
 	<br/>
 	<canvas id="snapshot" width=320 height=240></canvas>
 	<br/>
-	<button id="capture">Capture</button>
-	<button id="new">New</button>
+	<div class="btn-box">
+		<button class="btn btn-success" id="capture">Capture</button>
+		<button class="btn btn-primary" id="new">New</button>
+	</div>
 	
 	<script>
 	  var player = document.getElementById('player'); 
