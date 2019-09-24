@@ -19,12 +19,13 @@
   </body>
 	<script>
 		(function() {
-			setTimeOut(function() {
+			const time = setTimeout(function() {
 				if (window && window['webkit'] && window['webkit'].messageHandlers && window['webkit'].messageHandlers['cordova_iab']) {
 					window['webkit'].messageHandlers['cordova_iab'].postMessage(JSON.stringify({'data': 'value'}))
 				} else {
 					console.log('not found cordova_iab ');
 				}
+				clearTimeout(time);
 			}, 1000);
 		})()
 	</script>
