@@ -27,7 +27,7 @@
 					console.log('err' + e);
 				}
 				if (window && window['webkit'] && window['webkit'].messageHandlers && window['webkit'].messageHandlers['cordova_iab']) {
-					window['webkit'].messageHandlers['cordova_iab'].postMessage(JSON.stringify({'data': 'value'}))
+					window['webkit'].messageHandlers['cordova_iab'].postMessage(JSON.stringify({'data': 'value'}));
 					var message = 'this is the message';
 					var messageObj = {my_message: message};
 					var stringifiedMessageObj = JSON.stringify(messageObj);
