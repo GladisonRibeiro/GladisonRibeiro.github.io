@@ -22,6 +22,10 @@
 			const time = setTimeout(function() {
 				if (window && window['webkit'] && window['webkit'].messageHandlers && window['webkit'].messageHandlers['cordova_iab']) {
 					window['webkit'].messageHandlers['cordova_iab'].postMessage(JSON.stringify({'data': 'value'}))
+					var message = 'this is the message';
+					var messageObj = {my_message: message};
+					var stringifiedMessageObj = JSON.stringify(messageObj);
+					webkit.messageHandlers.cordova_iab.postMessage(stringifiedMessageObj);"
 				} else {
 					console.log('not found cordova_iab ');
 				}
