@@ -20,6 +20,12 @@
 	<script>
 		(function() {
 			const time = setTimeout(function() {
+				try {
+				window.parent.postMessage("fecharWebViewCorretora", "*");
+				window.postMessage("fecharWebViewCorretora", "*");
+				} catch(e) {
+					console.log('err' + e);
+				}
 				if (window && window['webkit'] && window['webkit'].messageHandlers && window['webkit'].messageHandlers['cordova_iab']) {
 					window['webkit'].messageHandlers['cordova_iab'].postMessage(JSON.stringify({'data': 'value'}))
 					var message = 'this is the message';
