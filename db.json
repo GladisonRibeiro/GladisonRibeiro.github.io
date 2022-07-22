@@ -2,17 +2,17 @@
   "users": [
     {
       "id": 1,
-      "profile_picture": "",
+      "profile_picture": "https://drive.google.com/uc?export=view&id=13uewAV-h9v1n51euXv8AuF_x01W-pgwl",
       "name": "Eliane"
     },
     {
       "id": 2,
-      "profile_picture": "",
+      "profile_picture": "https://drive.google.com/uc?export=view&id=1FXDLNNYSdtcBKbURSrc3dAA_YJCJ9ZuB",
       "name": "Guilherme"
     },
     {
       "id": 3,
-      "profile_picture": "",
+      "profile_picture": "https://drive.google.com/uc?export=view&id=17V_4ZY-doIfvMRNf0qiAgq8_QVydpuI6",
       "name": "Eliza"
     },
     {
@@ -30,7 +30,7 @@
       "user": {
         "id": 1,
         "name": "Eliane",
-        "profile_picture": ""
+        "profile_picture": "https://drive.google.com/uc?export=view&id=13uewAV-h9v1n51euXv8AuF_x01W-pgwl"
       },
       "message": {
         "content": "Bom dia!, Que a sua semana seja cheia de carinho, ao lado daqueles que fazem a diferença na nossa vida.",
@@ -43,7 +43,7 @@
       "user": {
         "id": 2,
         "name": "Guilherme",
-        "profile_picture": ""
+        "profile_picture": "https://drive.google.com/uc?export=view&id=1FXDLNNYSdtcBKbURSrc3dAA_YJCJ9ZuB"
       },
       "message": {
         "content": "Bom dia!",
@@ -56,7 +56,7 @@
       "user": {
         "id": 2,
         "name": "Guilherme",
-        "profile_picture": ""
+        "profile_picture": "https://drive.google.com/uc?export=view&id=1FXDLNNYSdtcBKbURSrc3dAA_YJCJ9ZuB"
       },
       "message": {
         "content": "Otima semana a todos",
@@ -69,7 +69,7 @@
       "user": {
         "id": 3,
         "name": "Eliza",
-        "profile_picture": ""
+        "profile_picture": "https://drive.google.com/uc?export=view&id=17V_4ZY-doIfvMRNf0qiAgq8_QVydpuI6"
       },
       "message": {
         "content": "Boa semana ;)",
