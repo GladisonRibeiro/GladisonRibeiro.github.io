@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "profile_picture": "",
+      "name": "Eliane"
+    },
+    {
+      "id": 2,
+      "profile_picture": "",
+      "name": "Guilherme"
+    },
+    {
+      "id": 3,
+      "profile_picture": "",
+      "name": "Eliza"
+    },
+    {
+      "id": 4,
+      "profile_picture": "",
+      "name": "gb.tech_",
+      "email": "gb.tech@blogging.io",
+      "password": "YWJjZDEyMzQ="
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "update_date": null,
+      "user": {
+        "id": 1,
+        "name": "Eliane",
+        "profile_picture": ""
+      },
+      "message": {
+        "content": "Bom dia!, Que a sua semana seja cheia de carinho, ao lado daqueles que fazem a diferença na nossa vida.",
+        "created_at": "2022-07-18T06:04:33Z"
+      }
+    },
+    {
+      "id": 2,
+      "update_date": null,
+      "user": {
+        "id": 2,
+        "name": "Guilherme",
+        "profile_picture": ""
+      },
+      "message": {
+        "content": "Bom dia!",
+        "created_at": "2022-07-18T07:30:14Z"
+      }
+    },
+    {
+      "id": 3,
+      "update_date": null,
+      "user": {
+        "id": 2,
+        "name": "Guilherme",
+        "profile_picture": ""
+      },
+      "message": {
+        "content": "Otima semana a todos",
+        "created_at": "2022-07-18T07:31:37Z"
+      }
+    },
+    {
+      "id": 4,
+      "update_date": null,
+      "user": {
+        "id": 3,
+        "name": "Eliza",
+        "profile_picture": ""
+      },
+      "message": {
+        "content": "Boa semana ;)",
+        "created_at": "2022-07-18T07:37:50Z"
+      }
+    }
+  ]
+}
